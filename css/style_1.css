@@ -45,85 +45,75 @@ div {
     outline: 2px solid red;
 }
 .wrapper {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
     background: yellowgreen;
+    text-align: center;
 }
-.t-row_1 div {
-    width: 400px;
+.clear {
+    clear: left;
 }
-.t-row_2 div {
-    width: 600px;
-}
-.in-t {
-    color: red;
+.in-float {
+    float: left;
     height: 100px;
-    display: table-cell;
-    text-align: center;    
 }
-.t-row_2 .in-t__cell-1 div {
+
+
+/* ---------- FLOAT 1 ---------- */
+.float-1 .in-float {
+    width: 33.33%;
+}
+/* ---------- FLOAT 2 ---------- */
+.float-2 .in-float {
+    width: 50%;
+}
+.float-2-cld-1 div {
+    height: 50%;
+}
+.float-2-cld-2 div {
+    height: 33.33%;
+}
+/* ---------- FLOAT 3 ---------- */
+.float-3-cld-1 {
+    width: 25%;
+}
+.float-3-cld-2 {
+    width: 75%;
+}
+.float-3-cld-2-cld-1, .float-3-cld-2-cld-2 {
+    height: 50%;
+}
+.float-3-cld-2-cld-2-cld {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+/* ---------- FLOAT 4 ---------- */
+.in-f-float-4_1 {
+    width: 75%;
+}
+.in-f-float-4_2 {
+    width: 25%;
+}
+.in-f-float-4_1-cld {
     height: 50px;
 }
-.t-row_2 .in-t__cell-2 div {
-    height: 33.333px;
-}
-.in-t {
-    width: 400px;
-    height: 100px;
-    display: table-cell;
-}
-.in-t__cell-box-1 {
-    width: 800px;
+.in-f-float-4_1-cld-1 {
+    width: 50%;
     height: 50px;
-    display: inline-block;
 }
-.in-t__cell-box-1-1 div {
-    width: 400px;
+.in-f-float-4_1-cld-2 {
+    width: 50%;
     height: 50px;
-    display: table-cell;
 }
-.t-row_4 {
-    color: red;
+.in-f-float-4_1-cld-1-cld-1 {
+    height: 25px;
 }
-.in-t__cell-1-1 {
-    width: 800px;
-    height: 100px;
-    display: table-cell;
+.in-f-float-4_1-cld-1-cld-2 {
+    height: 25px;
 }
-.in-t__cell-1-2 {
-    width: 400px;
-    height: 100px;
-    display: table-cell;
-}
-.in-t__cell-2-1 {
-    width: 800px;
-    height: 33.333px;
-}
-.in-t__cell-2-2 {
-    width: 800px;
-    height: 66.666px;
-}
-.in-t__cell-3-1 {
-    width: 400px;
-    height: 66.666px;
-    display: table-cell;
-}
-.in-t__cell-3-2 {
-    width: 400px;
-    height: 66.666px;
-    display: table-cell;
-}
-.in-t__cell-4-1 {
-    width: 400px;
-    height: 33.333px;
-}
-.in-t__cell-4-2 {
-    width: 400px;
-    height: 33.333px;
-    display: table-cell;
-}
-.in-t__cell-4-2 div {
-    width: 200px;
-    height: 33.333px;
-    display: table-cell;
+.d {
+    width: 50%;
+    height: 25px;
+    float: left;
 }
