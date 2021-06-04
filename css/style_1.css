@@ -50,6 +50,9 @@ div {
     background: yellowgreen;
     text-align: center;
 }
+
+
+
 .clear {
     clear: left;
 }
@@ -116,4 +119,32 @@ div {
     width: 50%;
     height: 25px;
     float: left;
+}
+ul {
+    text-align: center;
+    font-size: 0;
+}
+ul li {
+    display: inline-block;
+    background: aqua;
+    padding: 10px 30px;
+    border-right: red solid 5px;
+    color: red;
+} 
+ul li:last-child {
+    border: none;
+} 
+ul li:hover {
+    background: green; 
+    padding: 15px 35px;            
+}
+a:hover {
+    color: red;
+}  
+ul li a {
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    display: block;
 }
