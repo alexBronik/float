@@ -41,58 +41,124 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*-----------------------------------------*/
+div {
+    outline: 2px solid red;
+}
 .wrapper {
-    width: 1000px;
+    width: 1200px;
+    background: yellowgreen;
     margin: 0 auto;
     text-align: center;
 }
-.img {
-    border: 5px solid rgb(0, 119, 255);
-    display: inline-block;
-    position: relative;
-} 
-.abs1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(255,255,255,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}  
-.abs2 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(255,255,255,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}  
-.abs3 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(255,255,255,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}  
-.text {
-    font-size: 50px;
-    font-weight: 700;
-    color: rgb(48, 27, 0);
-}    
-
-
-/*------------------------------*/
+/*----------------1------------------*/
+.table-cell-1 {
+    width: 100%;
+    height: 100px;
+    
+}
+.table-cell-1 div {
+    width: 400px;
+    height: 100px;
+    display: table-cell;
+}
+/*----------------2------------------*/
+.table-cell-2 {
+    width: 100%;
+    height: 100px;
+}
+.tbl-1 {
+    width: 600%;
+    height: 100%;
+    display: table-cell;
+}
+.tbl-2 {
+    width: 600%;
+    height: 100%;
+    display: table-cell;
+}
+.tbl-1 div {
+    width: 600px;
+    height: 50px;
+}
+.tbl-2 div {
+    width: 600px;
+    height: 33.33px;
+}
+/*----------------3------------------*/
+.table-cell-3 {
+    width: 100%;
+    height: 100px;
+}
+.d-1 {
+    width: 400px;
+    height: 100px;
+    display: table-cell;
+}
+.t-cell {
+    width: 800px;
+    height: 100px;
+    display: table-cell;
+}
+.d-2 {
+    width: 800px;
+    height: 50px;
+}
+.t-cell-a {
+    width: 800px;
+    height: 50px;
+}
+.t-cell-a div {
+    width: 400px;
+    height: 50px;
+    display: table-cell;
+}
+/*----------------4------------------*/
+.table-cell-4 {
+    width: 100%;
+    height: 150px;
+}
+.t-cell-1 {
+    width: 800px;
+    height: 150px;
+    display: table-cell;
+}
+.t-cell-2 {
+    width: 400px;
+    height: 150px;
+    display: table-cell;
+}
+.tc-1 {
+    width: 800px;
+    height: 50%;
+}
+.tc-2 {
+    width: 800px;
+    height: 50%;
+}
+.tc-2-1 {
+    width: 400px;
+    height: 75px;
+    display: table-cell;
+}
+.tc-2-2 {
+    width: 400px;
+    height: 75px;
+    display: table-cell;
+}
+.tc-2-1-a {
+    width: 400px;
+    height: 50%;
+}
+.tc-2-1-b {
+    width: 400px;
+    height: 50%;
+}
+.tc-2-1-b div {
+    width: 200px;
+    height: 37.5px;
+    display: table-cell;
+}
+/*----------------ul------------------*/
 a {
     color: red;
     font-size: 20px;
@@ -154,5 +220,3 @@ ul .parent:hover .cld {
     top: 0;
     left: 100%;
 }
-
-
