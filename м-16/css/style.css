@@ -41,6 +41,10 @@
             border-collapse: collapse;
             border-spacing: 0;
         }
+
+
+
+
         .wrapper {
             background-color: black;
         }
@@ -78,6 +82,9 @@
             border: 5px solid yellowgreen;
             padding: 10px;
         }
+        .div2 p {
+            color: yellow;
+        }
         .div3 {
             width: 300px;
             height: 300px;
@@ -86,68 +93,208 @@
             border: 5px solid yellowgreen; 
             padding: 10px;
         }
-        a {
-            color: red;
-            font-size: 20px;
-            line-height: 20px;
-            text-align: center;
+        .div3 p {
+            color: yellow;
+        }
+
+        /*-----------menu------------*/
+        
+        .menu {
+            display: flex;
+            justify-content: center;            
+        }
+        .first {
+            display: flex;
+            padding-top: 5px;
+            align-items: center;     
+        }
+        .first a {    
             display: block;
-            margin: 0 auto;
-            padding: 10px;
+            text-align: center;        
+            color: lightseagreen;
+            text-decoration: none;
+            text-transform: uppercase;         
         }
-        ul {
-            text-align: center;
-            font-size: 0;            
+        .first a:hover {
+            background-color: rgb(165, 126, 42);
+            color: red;
         }
-        ul li {
-            display: inline-block;
-            background: aqua;
-            font-size: 10px;
-            border-right: red solid 2px;
+        .first > li > a {
+            padding: 10px 10px 10px 40px;          
+        }
+        .first > li > a:hover {
+            padding: 15px 15px 15px 45px;
+        }
+        .sprite1 {
             position: relative;
         }
-        ul li:last-child {
-            border: none;
+        .sprite1 > a::before {
+            content: "";
+            background: url("../../sprites/css_sprites.png") -48px -10px;                     
+            position: absolute;
+            width: 16px;
+            height: 16px; 
+            left: 13px;   
+            top: 8px;      
         }
-        ul li:hover {
-            background: green; 
-            padding: 15px 35px;            
+        .sprite1 > a:hover:before {              
+            top: 13px;      
         }
-        a:hover {
-            color: red;
+        .sprite2 {
+            position: relative;
         }
-        ul li a {
-            text-decoration: none;
-            color: seagreen;
-            text-transform: uppercase;
-            padding: 10px 30px;
-            display: block;
+        .sprite2 > a::before {
+            content: "";
+            background: url("../../sprites/css_sprites.png") -10px -10px;                     
+            position: absolute;
+            width: 18px;
+            height: 16px; 
+            left: 13px;   
+            top: 9px;      
         }
-        ul .parent:hover .cld {
-            display: block;
+        .sprite2 > a:hover:before {              
+            top: 14px;      
         }
-        .cld {
-            position: absolute;  
-            top: 100%;
-            left: 0;  
-            display: none;
-            padding: 10px 0 0;            
+        .parent {
+            position: relative;
         }
-        .cld li {
-            display: block;
+        .parent > .drop-a::after {
+            content: "";
+            background: url("../../sprites/css_sprites.png") -84px -46px;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            right: 13px;
+            top: 10px;
+        }
+        .parent > .drop-a:hover:after {
+            content: "";
+            background: url("../../sprites/css_sprites.png") -84px -10px;
+            position: absolute;
+            top: 15px;
         }
         .parent-2 {
             position: relative;
         }
-        .parent-2:hover .cld-2 li {
+        .parent-2 > .drop-b::before {
+            content: "";
+            background: url("../../sprites/css_sprites.png") -46px -46px;
             position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 9px;
+            top: 10px;
         }
-        .cld-2 li {
-            display: block;
+        .parent-2 > .drop-b:hover:before {
+            background: url("../../sprites/css_sprites.png") -10px -46px;
+            width: 16px;
+            height: 16px;            
+            top: 15px;
+        }
+        .first > li:last-child {
+            border-right: none;            
+        }
+        .sprite1,
+        .sprite2,
+        .parent {
+            background-color: brown;
+            border-right: 2px solid lawngreen;                        
+        }        
+        
+        .parent .drop-a {
+            padding: 10px 40px 10px 10px; 
+        }
+        .parent .drop-a:hover {
+            padding: 15px 45px 15px 15px; 
+        }
+        .parent {
+            position: relative;
+        }           
+        .cld {
+           position: absolute; 
+           top: 100%;
+           left: 0;
+        }
+        .cld a {
+            padding: 10px;
+            background-color: brown;
+        }
+        .cld a:hover {
+            padding: 15px;            
+        }
+        .cld > .parent-2 {
+            position: relative;
+            
+        }
+        .cld > li {
+            border-bottom: 2px solid yellow;
+        }
+        .cld > li:last-child {
+            border-bottom: none;
+        }
+        .cld-2 {
+            position: absolute;
             top: 0;
-            left: 100%;
+            right: 100%;
         }
-
+        .cld-2 > li {
+            border-bottom: 2px solid yellow;
+        }
+        .cld-2 > li:last-child {
+            border-bottom: none;
+        }
+        .parent > .cld {
+            display: none;
+        }
+        .parent:hover > .cld {
+            display: block;
+        }
+        .parent-2 > .cld-2 {
+            display: none;
+        }
+        .parent-2:hover > .cld-2 {
+            display: block;
+        }
         
-
         
+              
+
+        /*-------------------basement-----------------------*/
+        .basement {            
+            display: flex;
+            padding: 30px; 
+            justify-content: center;                     
+        }
+        .bas-cld {            
+            display: flex;
+            
+        }
+        .basement .bas-cld li {
+            width: 100px;
+            height: 100px;
+            border: 2px solid rosybrown;
+        }
+        .bas-cld > li > a {
+            display: block;
+            background: url("../../sprites/sprite-icon-8.jpg") 0 -500px ;
+            width: 100px;
+            height: 100px;
+        }
+        .bas-cld > li + li > a {
+            display: block;
+            background: url("../../sprites/sprite-icon-8.jpg") 600px -500px ;
+            width: 100px;
+            height: 100px;
+        }       
+        .bas-cld > li + li + li > a {
+            display: block;
+            background: url("../../sprites/sprite-icon-8.jpg") 500px -500px ;
+            width: 100px;
+            height: 100px;
+        }
+        .bas-cld > li + li + li + li > a {
+            display: block;
+            background: url("../../sprites/sprite-icon-8.jpg") 400px -500px ;
+            width: 100px;
+            height: 100px;
+        }
